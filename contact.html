@@ -3,16 +3,23 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Contact me</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="Saemie.com">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="saemie.com">
+ 
+  <meta property="og:title" content="Saemie Chouchane">
+  <meta property="og:description" content="A Senior Frontend Developer who is passionate about building beautiful web applications that are fast and accessible.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://saemie.com">
   <meta property="og:image" content="">
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:site_name" content="Saemie Chouchane, a Senior Frontend Developer" />
 
-  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+
+  <!-- <link rel="manifest" href="site.webmanifest"> {% endcomment %} -->
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
@@ -24,20 +31,23 @@
 <body class="page fade-in">
 
   <div class="container">
-    <a href="/" class="link">&#x2190; Back</a>
+    <nav>
+      <a href="/" class="link">&#x2190; Go back</a>
+    </nav>
     <h1 class="h1">Send me a message</h1>
     <p class=""></p>
     <div class="grid">
       <div class="form-container">
-        <p>I will do my best to get back to you quickly. I generally don't reply to marketing emails though.</p><br/>
+        <p>To contact me please fill out the form below. I will do my best to get back to you quickly. I generally don't reply to marketing emails though.</p><br/>
         <form
+        title="Contact form"
         class="form"
         action="https://formspree.io/xwkrgedr"
         method="POST"
         >
-            <input type="text" name="_name" class="input input_type_text" placeholder="Full name">
-            <input type="text" name="_replyto" class="input input_type_text" placeholder="you@example.com">
-            <textarea name="message" class="textarea" placeholder="Your message"></textarea>
+            <input type="text" name="_name" aria-label="Your full name" class="input input_type_text" placeholder="Full name">
+            <input type="text" name="_replyto" aria-label="Your email address" class="input input_type_text" placeholder="Email address">
+            <textarea name="message" class="textarea" aria-label="Your message" placeholder="Your message"></textarea>
             <br/>
             <button type="submit" class="button-green button-green--secondary">Send</button>
         </form>
