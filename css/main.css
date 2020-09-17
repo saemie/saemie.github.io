@@ -88,6 +88,11 @@
     cursor: pointer;
 }
 
+.button-green--secondary {
+  font-size: 20px;
+  padding: 15px 35px;
+}
+
 .bold {
     font-weight: bold;
     font-size: 46px;
